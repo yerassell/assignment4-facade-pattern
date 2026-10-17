@@ -5,13 +5,15 @@
 - Group: SE-2524
 - Topic: Option A - Media/File Conversion Facade
 - Repository URL: https://github.com/yerassell/assignment4-facade-pattern.git
+- Last commit: 8b06a87986fabbc2b6b7b45cd253d2467f0a7ad6
 
 
 ## Package structure
 - `subsystem/` - contains the subsystem classes (MetadataReader.java, CodecFactory.java, BitrateReader.java, AudioMixer.java)
-- `MediaConversionFacade.java` - contains the Facade
+- `Assignment4_SE-2524_Yermekkyzy_Assel.pdf` - is the report of the assignment
 - `Client.java` - contains the Client
-
+- `MediaConversionFacade.java` - contains the Facade
+  
   
 ## Build and run instruction
 - Run on Intellij IDEA
