@@ -5,7 +5,11 @@
 - Group: SE-2524
 - Topic: Option A - Media/File Conversion Facade
 - Repository URL: https://github.com/yerassell/assignment4-facade-pattern.git
-- Last commit: 8b06a87986fabbc2b6b7b45cd253d2467f0a7ad6
+- Last commit: d3f72cf7a6f2f0920e0bc53a68b8b6f6a37c85c6
+
+
+## Project purpose
+This is an application that uses a MediaConversionFacade that wraps several subsystem classes behind one simple method such as convert(fileName, targetFormat) to convert a file.
 
 
 ## Package structure
@@ -30,3 +34,19 @@
    javac *.java
    java Client.java
    ```
+
+## Expected Output
+passing to Client.java
+``` bash
+facade.convert("song.mp3", "wav");
+```
+outputs:
+``` bash
+MetadataReader: Reading song.mp3... Identified format is MP3
+CodecFactory: Selects the MP3 decoder and the WAV encoder.
+BitrateReader: Reading song.mp3 using the MP3 Decoder to decode file into raw audio samples
+AudioMixer: Adjusting the volume of the audio
+BitrateReader: Encoding the processed audio samples into WAV format using WAV Encoder
+Output: File saved as song.wav
+
+```
