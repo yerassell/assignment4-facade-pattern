@@ -1,6 +1,6 @@
 import subsystem.*;
 
-public class Main {
+public class Client {
     public static void main(String[] args) {
         MetadataReader meta = new MetadataReader();
         CodecFactory codec = new CodecFactory();
